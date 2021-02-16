@@ -5,4 +5,10 @@ body {
 .thumbnail {
     width: 600px;
     padding: 50px;
+    transition: filter 200ms ease;
+    border-radius: 75px; 
+}
+
+.thumbnail:hover{
+    filter: brightness(50%) blur(3px);
 }
