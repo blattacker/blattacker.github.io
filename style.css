@@ -67,11 +67,9 @@ h1 {
     transition-duration: .5s;
     transition-property: opacity;
     padding: 2.5rem 6rem;
-    visibility: hidden;
 }
 
 .thumbnail:hover > .thumb-caption {
-    visibility: visible;
     opacity: 100%;
 }
 
@@ -81,4 +79,8 @@ h1 {
 
 .thumb-caption li {
     font-weight: 500;
+}
+
+.visible {
+    visibility: visible;
 }
