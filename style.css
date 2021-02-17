@@ -1,14 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: slategrey;
 }
 
-.thumbnail {
-    width: 600px;
-    padding: 50px;
-    transition: filter 200ms ease;
-    border-radius: 75px; 
+h1 {
+    font-family: 'hero-new', sans-serif;
+    font-size: 4rem;
+    padding: 2rem;
+
 }
 
-.thumbnail:hover{
-    filter: brightness(50%) blur(3px);
+.thumb-area {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.thumbnail {
+    font-family: 'condor', sans-serif;
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    padding: 50px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    margin: 15px 30px;
+    position: relative;
+    
+}
+
+.thumb-title {
+    font-family: 'condor', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.cabin {
+    background-image: url('./assets/img/cabinThumb.jpg')
+}
+
+.name {
+    background-image: url('./assets/img/characterThumb.jpg');
+}
+
+.piq {
+    background-image: url('./assets/img/piqThumb.jpg');
+}
+
+/* .thumbnail:hover {
+    filter: brightness(50%);
+} */
+
+.thumb-caption {
+    background-color: hsla(0, 0%, 0%, .95);
+    height: 500px;
+    width: 500px;
+    opacity: 0%;
+    border-radius: 15px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* text-align: center; */
+    transition-duration: .5s;
+    transition-property: opacity;
+    padding: 2.5rem 6rem;
+}
+
+.thumbnail:hover > .thumb-caption {
+    opacity: 100%;
+}
+
+.thumb-caption h1, h2, h3, h4, h5, h6, li {
+    color: white;
+}
+
+.thumb-caption li {
+    font-weight: 500;
 }
